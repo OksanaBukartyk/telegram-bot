@@ -654,7 +654,7 @@ def pidbirSpez(message):
     bot.send_message(message.chat.id, 12 * strilky)
     Stext = 'Підбір спеціальності'
     bot.send_message(chat_id=message.chat.id, text=('Твій вибір:  ' + Stext))
-    f8 = open('ZNO.txt', 'r')
+    f8 = open('Information/ЗНО/ZNO.txt', 'r')
     bot.send_message(chat_id=message.chat.id, text=f8.read())
     backend(message, 'Back3')
 
