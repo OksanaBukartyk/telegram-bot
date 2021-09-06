@@ -6,7 +6,6 @@ bulavka=u'\U0001F4CC'
 backs=u'\U000021A9'
 strilky=u'\U0001F53B'
 books=u'\U0001F4DC'
-
 TOKEN='1968621740:AAGESlwAL0lvnSc-rS5etPhBUOc6MMcX7IU'
 bot = telebot.TeleBot (TOKEN)
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True)
@@ -662,8 +661,4 @@ def pidbirSpez(message):
 def smile(message):
     #bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAANwXskTHd5uisB9m9Z5CMe_1Xb0k8AAAloAA2CJbQwxXLT_o2OKHxkE')
     bot.send_message(message.chat.id, 'Нічого нового ')
-#bot.polling()
-bot.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
-                          url_path=TOKEN)
-bot.bot.setWebhook('https://young-hamlet-57534.herokuapp.com/' + TOKEN)
+bot.polling()
